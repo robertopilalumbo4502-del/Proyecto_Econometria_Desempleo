@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Econometría - Desempleo Urbano Ecuador</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 40px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        h2 { color: #1f2937; margin-top: 25px; }
+        .badge { background: #2563eb; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; text-align: center; }
+        .card-val { font-size: 1.4em; font-weight: bold; color: #2563eb; }
+        footer { margin-top: 30px; text-align: center; color: #64748b; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">PROYECTO FINAL ECONOMETRÍA</span>
+        <h1>Determinantes del Desempleo Urbano en Ecuador</h1>
+        <p><strong>Autor:</strong> Roberto Pilalumbo | <strong>Metodología:</strong> Logit vs. Probit (ENEMDU)</p>
+
+        <h2>📊 Resumen del Modelo Econométrico</h2>
+        <div class="metrics-grid">
+            <div class="card">
+                <div>Modelo Seleccionado</div>
+                <div class="card-val">Logit</div>
+            </div>
+            <div class="card">
+                <div>Ajuste (McFadden R²)</div>
+                <div class="card-val">0.142</div>
+            </div>
+            <div class="card">
+                <div>Área ROC (AUC)</div>
+                <div class="card-val">0.768</div>
+            </div>
+        </div>
+
+        <h2>📈 Hallazgos Principales</h2>
+        <ul>
+            <li><strong>Escolaridad:</strong> Cada año adicional de educación reduce significativamente la probabilidad de caer en desempleo.</li>
+            <li><strong>Efectos Marginales:</strong> El impacto marginal de la educación es más pronunciado en los niveles de instrucción secundaria y superior.</li>
+        </ul>
+
+        <footer>
+            <p>Repositorio de código fuente disponible en GitHub | Universidad Técnica de Cotopaxi</p>
+        </footer>
+    </div>
+</body>
+</html>
