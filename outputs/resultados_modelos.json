@@ -1,0 +1,21 @@
+{
+    "proyecto": "Determinantes del Desempleo Urbano en Ecuador",
+    "modalidad": "Modalidad A - Respuesta Binaria",
+    "observaciones": 3000,
+    "modelos": {
+        "logit": {
+            "aic": 3964.5433273324757,
+            "bic": 3994.575165170727,
+            "pseudo_r2": 0.029276020673467906,
+            "auc": 0.6153107529124224,
+            "log_likelihood": -1977.2716636662378
+        },
+        "probit": {
+            "aic": 3964.5753437378567,
+            "bic": 3994.607181576108,
+            "pseudo_r2": 0.029268161516681324,
+            "auc": 0.6153153264401124,
+            "log_likelihood": -1977.2876718689283
+        }
+    }
+}
