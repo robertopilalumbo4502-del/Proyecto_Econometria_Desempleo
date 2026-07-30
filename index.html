@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Econometría - Desempleo Urbano Ecuador</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 40px; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
-        h2 { color: #1f2937; margin-top: 25px; }
-        .badge { background: #2563eb; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
-        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
-        .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; text-align: center; }
-        .card-val { font-size: 1.4em; font-weight: bold; color: #2563eb; }
-        footer { margin-top: 30px; text-align: center; color: #64748b; font-size: 0.9em; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 40px 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        h1 { color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 10px; }
+        h2 { color: #1f2937; margin-top: 30px; border-left: 4px solid #2563eb; padding-left: 10px; }
+        .badge { background: #2563eb; color: white; padding: 5px 14px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 20px 0; }
+        .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; text-align: center; }
+        .card-val { font-size: 1.6em; font-weight: bold; color: #2563eb; margin-top: 5px; }
+        .grid-img { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .img-card { border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; background: #fafafa; text-align: center; }
+        .img-card img { max-width: 100%; height: auto; border-radius: 6px; }
+        .btn-github { display: inline-block; background: #0969da; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+        .btn-github:hover { background: #044289; }
+        footer { margin-top: 40px; text-align: center; color: #64748b; font-size: 0.9em; border-top: 1px solid #e2e8f0; padding-top: 20px; }
     </style>
 </head>
 <body>
@@ -38,14 +43,32 @@
             </div>
         </div>
 
-        <h2>📈 Hallazgos Principales</h2>
+        <h2>📈 Resultante Gráfica y Visualización</h2>
+        <div class="grid-img">
+            <div class="img-card">
+                <h3>Curva ROC Comparativa</h3>
+                <img src="outputs/curva_roc_comparativa.png" alt="Curva ROC">
+            </div>
+            <div class="img-card">
+                <h3>Probabilidad por Escolaridad</h3>
+                <img src="outputs/probabilidad_escolaridad.png" alt="Probabilidad Escolaridad">
+            </div>
+        </div>
+
+        <h2>📝 Hallazgos Principales</h2>
         <ul>
             <li><strong>Escolaridad:</strong> Cada año adicional de educación reduce significativamente la probabilidad de caer en desempleo.</li>
             <li><strong>Efectos Marginales:</strong> El impacto marginal de la educación es más pronunciado en los niveles de instrucción secundaria y superior.</li>
         </ul>
 
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://github.com/robertopilalumbo4502-del/Proyecto_Econometria_Desempleo" target="_blank" class="btn-github">
+                📂 Ver Código Fuente y Commits en GitHub
+            </a>
+        </div>
+
         <footer>
-            <p>Repositorio de código fuente disponible en GitHub | Universidad Técnica de Cotopaxi</p>
+            <p>Universidad Técnica de Cotopaxi | Desplegado automáticamente con Vercel & Git</p>
         </footer>
     </div>
 </body>
